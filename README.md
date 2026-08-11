@@ -9,7 +9,7 @@ A simple and modern web-based chatbot that allows users to interact with Google'
 ## 🌐 Live Demo
 
 🚀 **Try the Chatbot:**  
-[Open Live Application]([https://personal-gemini-chatbot-v3mxy9xofds9wejjqncrmh.streamlit.app/])
+[Open Live Application](https://personal-gemini-chatbot-v3mxy9xofds9wejjqncrmh.streamlit.app/)
 
 
 
