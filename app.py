@@ -25,6 +25,7 @@ load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+# For Streamlit Cloud
 if not GEMINI_API_KEY:
     try:
         GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
@@ -48,8 +49,8 @@ if "messages" not in st.session_state:
 # Header
 # ============================================================
 
-st.title("✨Personal Gemini ChatBot")
-st.caption("Powered by Md.Sifat Mahmud")
+st.title("✨ Personal Gemini ChatBot")
+st.caption("Powered by Md. Sifat Mahmud")
 
 
 # ============================================================
@@ -114,7 +115,6 @@ if user_prompt:
 
     try:
 
-        # Create a NEW client for this request
         client = genai.Client(
             api_key=GEMINI_API_KEY
         )
@@ -126,7 +126,6 @@ if user_prompt:
 
         response_text = response.text
 
-        # Close client after request
         client.close()
 
     except Exception as e:
